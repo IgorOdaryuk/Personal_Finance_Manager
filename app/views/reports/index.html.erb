@@ -1,0 +1,41 @@
+<div class="d-flex justify-content-center">
+  <div>
+    <h1 class="text-center"><%= t('header.reports') %></h1>
+    <%= form_with method: :get do |form| %>
+      <div class="container" id="form">
+
+
+
+        <div class="input-with-post-icon datepicker">
+          <%= form.label t('reports.form.start_date'), style: "display: block" %>
+          <%= form.date_field :start_date, value: '1970-01-01', class: "form-control" %>
+        </div>
+
+        <div class="input-with-post-icon datepicker">
+          <%= form.label t('reports.form.end_date'), style: "display: block" %>
+          <%= form.date_field :final_date, value: '2030-12-12', class: "form-control" %>
+        </div>
+
+        <div class="text-center">
+          <%= form.label t('operations.form.category'), style: "display: block" %>
+          <% categories_array = Category.all.where('user_id = ?', current_user.id).map { |cat| [cat.name, cat.id] } %>
+          <%= form.select(:category_id, categories_array, { include_blank: t('operations.form.choose') }, { :class => 'btn btn-secondary dropdown-toggle' }) %>
+        </div>
+
+        <br>
+        <div class="col">
+          <%= form.label t('reports.form.income') %>
+          <%= form.check_box :income, {}, true %>
+        </div>
+        <hr class="border border-3 opacity-100">
+        <div class="btn-group" id="padding-btns">
+          <%= form.submit t('reports.form.by_category'), formaction: reports_report_by_category_path, class: "btn btn-primary" %>
+          <%= form.submit t('reports.form.by_dates'), formaction: reports_report_by_dates_path, class: "btn btn-warning" %>
+        </div>
+
+      </div>
+    <% end %>
+  </div>
+</div>
+
+

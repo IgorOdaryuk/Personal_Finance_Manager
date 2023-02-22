@@ -1,0 +1,22 @@
+<div class="d-flex justify-content-center">
+  <div>
+    <h2 class="text-center"><%= t('user.chared.links.forgot_passwd') %></h2>
+    <div class="container" id="form">
+      <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+        <%= render "devise/shared/error_messages", resource: resource %>
+
+        <div>
+          <%= f.label :email %><br />
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control",  id:"margn-btns"  %>
+        </div>
+
+        <div>
+          <%= f.submit t('user.passwords.send_instructions'), class: "btn btn-dark",  id:"margn-btns" %>
+        </div>
+      <% end %>
+    </div>
+
+    <%= render "devise/shared/links" %>
+  </div>
+</div>
+

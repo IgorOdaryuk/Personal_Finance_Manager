@@ -1,0 +1,73 @@
+# Categories (test database)
+
+0x00007f0229637ef0:
+  id: 1 
+  name: "House" 
+  description: "Things to my home" 
+  created_at: Mon 06 Feb 2023 19:42:31.640031000 UTC +00:00 
+  updated_at: Mon 06 Feb 2023 19:42:31.640032000 UTC +00:00 
+  user_id: 1 
+  
+0x00007f0229637e28: 
+  id: 2
+  name: "Beer"
+  description: "Favourite alcohol" 
+  created_at: Mon 06 Feb 2023 19:42:31.705687000 UTC +00:00 
+  updated_at: Mon 06 Feb 2023 19:42:31.705688000 UTC +00:00 
+  user_id: 1 
+  
+0x00007f0229637d60: 
+  id: 3 
+  name: "Internet" 
+  description: "Payment in web" 
+  created_at: Mon 06 Feb 2023 19:42:31.764074000 UTC +00:00 
+  updated_at: Mon 06 Feb 2023 19:42:31.764075000 UTC +00:00 
+  user_id: 1 
+  
+0x00007f0229637c98: 
+  id: 4 
+  name: "Restaurants" 
+  description: "Business lunch" 
+  created_at: Mon 06 Feb 2023 19:42:31.822386000 UTC +00:00 
+  updated_at: Mon 06 Feb 2023 19:42:31.822387000 UTC +00:00 
+  user_id: 1 
+  
+0x00007f0229637bd0: 
+  id: 5 
+  name: "Games" 
+  description: "Games on PC" 
+  created_at: Mon 06 Feb 2023 19:42:31.880702000 UTC +00:00 
+  updated_at: Mon 06 Feb 2023 19:42:31.880702000 UTC +00:00 
+  user_id: 1 
+  
+0x00007f0229637b08: 
+  id: 6 
+  name: "Coffee" 
+  description: "Just to wake up" 
+  created_at: Mon 06 Feb 2023 19:42:31.939037000 UTC +00:00 
+  updated_at: Mon 06 Feb 2023 19:42:31.939037000 UTC +00:00 
+  user_id: 1 
+  
+0x00007f0229637a40:
+  id: 7
+  name: "Music"
+  description: "Outlays to keep my menthal health"
+  created_at: Mon 06 Feb 2023 19:42:31.997355000 UTC +00:00
+  updated_at: Mon 06 Feb 2023 19:42:31.997355000 UTC +00:00
+  user_id: 1 
+  
+0x00007f0229637978: 
+  id: 8 
+  name: "Business" 
+  description: "Income from my skateshop" 
+  created_at: Mon 06 Feb 2023 19:42:32.055751000 UTC +00:00 
+  updated_at: Mon 06 Feb 2023 19:42:32.055751000 UTC +00:00 
+  user_id: 1 
+  
+0x00007f02296378b0: 
+  id: 9 
+  name: "Work" 
+  description: "My  freelance salary" 
+  created_at: Mon 06 Feb 2023 19:42:32.114097000 UTC +00:00 
+  updated_at: Mon 06 Feb 2023 19:42:32.114097000 UTC +00:00 
+  user_id: 1 ]

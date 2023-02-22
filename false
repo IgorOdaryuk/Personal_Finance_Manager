@@ -1,0 +1,2 @@
+      invoke  active_record
+      create    db/migrate/20230204165418_add_income_to_operations.rb

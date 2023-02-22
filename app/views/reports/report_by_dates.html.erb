@@ -1,0 +1,71 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script type='text/javascript'>
+    (function(){
+        if(!sessionStorage.getItem('firstLoad')){
+            sessionStorage['firstLoad'] = true;
+            window.location.reload();
+        }else{
+            sessionStorage.removeItem('firstLoad');
+        }})();
+</script>
+
+<% @dataset_outlay = "{ label: '#{t('operations.outlay')}', data: #{@operations_outlay_data.values}, fill: true, borderColor: 'rgb(255, 165, 165)',tension: 0.1}" %>
+<% @dataset_income = "{ label: '#{t('operations.income')}', data: #{@operations_income_data.values}, fill: true, borderColor: 'rgb(140, 255, 170)',tension: 0.1}" %>
+
+<% @dataset = @operations_income.length > 0 ? "#{@dataset_outlay}, #{@dataset_income}" : "#{@dataset_outlay}" %>
+
+<h1 class="text-center"><%= t('reports.form.by_dates') %></h1>
+
+<div id="form-report">
+  <canvas id="OutlayChart" width="2000" height="500"></canvas>
+  <script>
+
+      new Chart(document.getElementById('OutlayChart'), {
+          type: 'line',
+          data: {
+              labels: <%= raw @operations_outlay_dates %>,
+              datasets: [<%= raw @dataset_outlay %>]
+          },
+          options: {
+              animations: {
+                  tension: {
+                      duration: 1000,
+                      easing: 'linear',
+                      from: 0.3,
+                      to: 0.2,
+                      loop: true
+                  }
+              },
+          }
+      });
+  </script>
+
+  <% if @operations_income.length > 0 %>
+    <canvas id="IncomeChart" width="2000" height="500"></canvas>
+    <script>
+
+        new Chart(document.getElementById('IncomeChart'), {
+            type: 'line',
+            data: {
+                labels: <%= raw @operations_income_dates %>,
+                datasets: [<%= raw @dataset_income %>]
+            },
+            options: {
+                animations: {
+                    tension: {
+                        duration: 1000,
+                        easing: 'linear',
+                        from: 0.3,
+                        to: 0.2,
+                        loop: true
+                    }
+                },
+            }
+        });
+    </script>
+  <% end %>
+
+</div>
+
+

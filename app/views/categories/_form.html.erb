@@ -1,0 +1,36 @@
+<div class="d-flex justify-content-center ">
+  <%= form_with(model: category) do |form| %>
+    <div class="container" id="form" >
+      <% if category.errors.any? %>
+        <div style="color: red">
+          <h2><%= "#{category.errors.count.to_s} #{t('errors.error', count:category.errors.count)} "%>
+            <%= t('errors.all_category_errors', count:category.errors.count) %></h2>
+
+          <ul>
+            <% category.errors.each do |error| %>
+              <li><%= t("errors.attributes.#{error.attribute.to_s}") %> <%= error.message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+<div class="container p-3 text-center">
+
+          <%= form.label t('categories.form.name'), style: "display: block" %>
+          <%= form.text_field :name, class:"form-control"  %>
+        </div>
+
+<div class="container p-3 text-center">
+          <%= form.label t('categories.form.description'), style: "display: block" %>
+          <%= form.text_field :description, class:"form-control" %>
+        </div>
+        </div>
+
+        <div class="container p-3 text-center ">
+        <div>
+          <%= form.submit submit_category_type, class:"btn btn-primary" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

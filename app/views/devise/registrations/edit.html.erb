@@ -1,0 +1,59 @@
+<div class="d-flex justify-content-center">
+  <div>
+    <h2 class="text-center"><%= t('user.edit_user') %></h2>
+    <div class="container" id="form">
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+        <%= render "devise/shared/error_messages", resource: resource %>
+
+
+        <div>
+          <%= f.label :email %><br/>
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
+        </div>
+
+        <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+          <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+        <% end %>
+
+        <div>
+          <%= f.label t('user.form.password') %> <i><%= t('user.form.change_pass_comment') %></i><br/>
+          <%= f.password_field :password, autocomplete: "new-password", class: "form-control" %>
+          <% if @minimum_password_length %>
+            <br/>
+            <em><%= @minimum_password_length %><%= t('user.form.char_min') %> </em>
+          <% end %>
+        </div>
+
+        <div>
+          <%= f.label t('user.form.password_confirmation') %><br/>
+          <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control" %>
+        </div>
+
+        <div>
+          <%= f.label  t('user.form.current_password')%> <i><%= t('user.form.current_pass_comment') %></i><br/>
+          <%= f.password_field :current_password, autocomplete: "current-password", class: "form-control" %>
+        </div>
+
+
+
+        <div class="container p-3 text-center ">
+          <%= f.submit t('update'), class: "btn btn-success" %>
+        </div>
+      <% end %>
+    </div>
+    
+    <div class="gap-6 text-center">
+      <hr class="border-dark border-3 opacity-100">
+      <div class="row">
+        <div class="col">
+          <%= t('user.unhappy') %>
+        </div>
+        <div class="col">
+          <%= button_to t('user.delete_account'), registration_path(current_user), data: { turbo_confirm: 'Are you sure?' },
+                        method: :delete, class: "btn btn-danger",  id:"margn-btns" %>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

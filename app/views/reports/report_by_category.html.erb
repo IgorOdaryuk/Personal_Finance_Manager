@@ -1,0 +1,126 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<% @operations_income.length > 0 ? width_data = 400 : width_data = 600%>
+
+
+<script type='text/javascript'>
+    (function(){
+        if(!sessionStorage.getItem('firstLoad')){
+            sessionStorage['firstLoad'] = true;
+            window.location.reload();
+        }else{
+            sessionStorage.removeItem('firstLoad');
+        }})();
+</script>
+
+<div class="d-flex justify-content-center">
+  <h1><%= t('reports.form.by_category') %></h1>
+</div>
+
+<div id=form-report>
+  <div class="d-flex justify-content-center" >
+    <div id="form-report">
+      <div class="align-self-center">
+        <table class="table">
+          <thead>
+          <tr>
+            <th scope="col"><%= t('operations.outlay') %></th>
+          </tr>
+          <tbody class="table-group-divider">
+          <tr>
+            <th scope="col"><%= t('operations.form.category') %></th>
+            <th scope="col"><%= t('reports.sum') %></th>
+          </tr>
+          </thead>
+          <tbody class="table-group-divider">
+          <% @categories_outlay.each do |category| %>
+            <tr>
+              <td><%= category[0] %></td>
+              <td><%= category[1] %></td>
+            </tr>
+          <% end %>
+
+          <tbody class="table-group-divider">
+          <tr>
+            <th scope="col"><%= t('reports.total_sum') %></th>
+            <th scope="col"><%= @categories_outlay.map { |category| category[1] }.sum %></th>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="form-report">
+      <canvas id="myChart1" width=<%= width_data %>></canvas>
+      <script>
+          new Chart(document.getElementById('myChart1'), {
+              type: 'polarArea',
+              data: {
+                  labels: <%= raw @categories_outlay.keys  %>,
+                  datasets: [{
+                      data: <%= @categories_outlay.values  %>,
+                      backgroundColor: <%= raw @background_colors %>
+                  }]
+              },
+              options: {
+                  responsive: false
+              }
+          });
+      </script>
+    </div>
+
+    <% if @operations_income.length > 0 %>
+      <div class="d-flex justify-content-center" >
+        <div id="form-report">
+          <div class="align-self-center">
+            <table class="table">
+              <thead>
+              <tr>
+                <th scope="col"><%= t('operations.income') %></th>
+              </tr>
+              <tbody class="table-group-divider">
+              <tr>
+                <th scope="col"><%= t('operations.form.category') %></th>
+                <th scope="col"><%= t('reports.sum') %></th>
+              </tr>
+              </thead>
+
+              <tbody class="table-group-divider">
+
+              <% @categories_income.each do |category| %>
+                <tr>
+                  <td><%= category[0] %></td>
+                  <td><%= category[1] %></td>
+                </tr>
+              <% end %>
+
+              <tbody class="table-group-divider">
+              <tr>
+                <th scope="col"><%= t('reports.total_sum') %></th>
+                <th scope="col"><%= @categories_income.map { |category| category[1] }.sum %></th>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div id="form-report">
+          <canvas id="myChart2" width="400"></canvas>
+          <script>
+              new Chart(document.getElementById('myChart2'), {
+                  type: 'polarArea',
+                  data: {
+                      labels: <%= raw @categories_income.keys  %>,
+                      datasets: [{
+                          data: <%= @categories_income.values  %>,
+                          backgroundColor: <%= raw @background_colors %>
+                      }]
+                  },
+                  options: {
+                      responsive: false
+                  }
+              });
+          </script>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

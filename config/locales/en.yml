@@ -1,0 +1,126 @@
+en:
+  header:
+    reports: "Reports"
+
+    operations:
+      title: "Operations"
+      all: "Show all operations"
+      income: "Show income operations"
+      outlay: "Show outlay operations"
+      new: "New operation"
+
+    categories:
+      title: "Categories"
+      all: "Show categories"
+      new: "New category"
+
+    user:
+      login: "Login"
+      signup: "Signup"
+      logout: "Logout"
+      settings: "Settings"
+
+  user:
+    edit_user: "Edit user"
+    unhappy: "Unhappy of this project?"
+    delete_account: "Delete my account"
+    select_language: "Select language"
+
+    confirmarions:
+      resend_instructions: "Resend confirmation instructions"
+
+    passwords:
+      send_instructions: "Send me reset password instructions"
+
+    form:
+      password: "Password"
+      password_confirmation: "Confirm password"
+      current_password: "Current password"
+      remember_me: "Remember me"
+      char_min: " characters minimum"
+      change_pass_comment: "(leave blank if you don't want to change it)"
+      current_pass_comment: "(we need your current password to confirm your changes)"
+
+    shared:
+      links:
+        tap_here: "Tap here"
+        forgot_passwd: "Forgot password?"
+        no_account: "Don't have an account yet?"
+        no_conf_info: "Didn't receive confirmation instructions?"
+        no_unlock_instructions: "Didn't receive unlock instructions?"
+        sign_with: "Sign in with "
+
+    unlocks:
+      resend_instructions: "Resend unlock instructions"
+
+  categories:
+    form:
+      name: 'Name'
+      description: "Description"
+      create: "Create category"
+      update: "Done"
+
+    edit: "Edit category"
+    show_operations: "Show operations"
+
+  operations:
+    income: "Income"
+    outlay: "Outlay"
+
+    form:
+      amount: 'Amount'
+      odate: "Operation date"
+      description: "Description"
+      category: "Category"
+      choose: "Choose category"
+      create: "Create operation"
+      update: "Done"
+
+
+    edit: "Edit operation"
+
+
+  reports:
+    form:
+      start_date: "Start date:"
+      end_date: "End date:"
+      income: "Include income"
+      by_category: "Report by category"
+      by_dates: "Report by dates"
+
+    sum: "Sum"
+    total_sum: "Total sum"
+
+  main:
+    exchange:
+      rate: "Exchange rate on"
+      currency: "Currency"
+      buy: "Buy"
+      sell: "Sell"
+
+    operations:
+      title: "My last outlays"
+
+
+  confirm: "Are you sure?"
+  show: "Show"
+  edit: "Edit"
+  delete: "Delete"
+  update: "Update"
+
+
+  errors:
+    error:
+      one: 'error'
+      few: "errors"
+      many: "errors"
+      other: 'errors'
+    all_category_errors: "prohibited this category from being saved:"
+    all_operation_errors: "prohibited this operation from being saved:"
+
+    attributes:
+      name: 'Field "Name"'
+      description: 'Field "Description"'
+      category: 'Field "Category"'
+      amount: 'Field "Amount"'
+      odate: 'Field "Operation date"'

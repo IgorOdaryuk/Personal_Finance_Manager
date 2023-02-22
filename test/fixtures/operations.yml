@@ -1,0 +1,629 @@
+# Operations (test database)
+
+0x00007f0229622488:
+  id: 1
+  amount: 0.61e2
+  odate: Sat  19 Nov 2022 14:59:01.000000000 UTC +00:00
+  description: "Orval Trappist Ale"
+  category_id: 2
+  created_at: Mon  06 Feb 2023 19:42:36.643803000 UTC +00:00
+  updated_at: Mon  06 Feb 2023 19:42:36.643804000 UTC +00:00
+  user_id: 1
+  income: false
+
+0x00007f02296223c0:
+  id: 2
+  amount: 0.72e2 
+  odate: Sat  25 Sep 2021 07:50:49.000000000 UTC +00:00 
+  description: "Chocolate St" 
+  category_id: 2 
+  created_at: Mon  06 Feb 2023 19:42:37.627079000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:37.627080000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f02296222f8:
+  id: 3
+  amount: 0.29e2 
+  odate: Mon  17 May 2021 09:47:54.000000000 UTC +00:00 
+  description: "Oak Aged Yeti Imperial Stout" 
+  category_id: 2 
+  created_at: Mon  06 Feb 2023 19:42:38.735229000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:38.735230000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229622230:
+  id: 4
+  amount: 0.74e2 
+  odate: Sat  02 Oct 2021 07:13:18.000000000 UTC +00:00 
+  description: "Bourbon County Stout" 
+  category_id: 2 
+  created_at: Mon  06 Feb 2023 19:42:38.801972000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:38.801973000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229622168:
+  id: 5
+  amount: 0.28e2 
+  odate: Thu  19 Aug 2021 14:17:25.000000000 UTC +00:00 
+  description: "Founders Kentucky Breakfast" 
+  category_id: 2 
+  created_at: Mon  06 Feb 2023 19:42:39.135281000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:39.135281000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f02296220a0:
+  id: 6
+  amount: 0.346e3 
+  odate: Fri  23 Jul 2021 06:47:06.000000000 UTC +00:00 
+  description: "Buy on dickens-west.org" 
+  category_id: 3 
+  created_at: Mon  06 Feb 2023 19:42:39.743564000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:39.743564000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229621fd8:
+  id: 7
+  amount: 0.462e3 
+  odate: Sat  16 Jul 2022 12:38:26.000000000 UTC +00:00 
+  description: "Buy on bahringer.info" 
+  category_id: 3 
+  created_at: Mon  06 Feb 2023 19:42:39.943435000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:39.943436000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229621f10:
+  id: 8
+  amount: 0.159e3 
+  odate: Sun  22 May 2022 08:12:39.000000000 UTC +00:00 
+  description: "Buy on vandervort-witting.info" 
+  category_id: 3 
+  created_at: Mon  06 Feb 2023 19:42:40.351712000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:40.351713000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229621e48:
+  id: 9
+  amount: 0.253e3 
+  odate: Wed  16 Feb 2022 12:14:09.000000000 UTC +00:00 
+  description: "Buy on bergnaum.com" 
+  category_id: 3 
+  created_at: Mon  06 Feb 2023 19:42:40.401725000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:40.401725000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229621d80:
+  id: 10
+  amount: 0.286e3 
+  odate: Sun  26 Jun 2022 12:25:57.000000000 UTC +00:00 
+  description: "Buy on bartell.net" 
+  category_id: 3 
+  created_at: Mon  06 Feb 2023 19:42:40.676848000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:40.676848000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229621cb8:
+  id: 11
+  amount: 0.208e3 
+  odate: Wed  12 Jan 2022 14:46:56.000000000 UTC +00:00 
+  description: "Buy on walter.name" 
+  category_id: 3 
+  created_at: Mon  06 Feb 2023 19:42:40.726819000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:40.726819000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229621bf0:
+  id: 12
+  amount: 0.468e3 
+  odate: Tue  19 Apr 2022 11:53:19.000000000 UTC +00:00 
+  description: "Buy on williamson.name" 
+  category_id: 3 
+  created_at: Mon  06 Feb 2023 19:42:41.285118000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:41.285119000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229621b28:
+  id: 13
+  amount: 0.208e3 
+  odate: Fri  25 Feb 2022 07:28:11.000000000 UTC +00:00 
+  description: "Buy on carroll.com" 
+  category_id: 3 
+  created_at: Mon  06 Feb 2023 19:42:41.393398000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:41.393399000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229621a60:
+  id: 14
+  amount: 0.295e3 
+  odate: Mon  12 Dec 2022 13:33:53.000000000 UTC +00:00 
+  description: "Buy on kuhn.biz" 
+  category_id: 3 
+  created_at: Mon  06 Feb 2023 19:42:41.943251000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:41.943252000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229621998:
+  id: 15
+  amount: 0.255e3 
+  odate: Fri  12 Nov 2021 10:18:42.000000000 UTC +00:00 
+  description: "Buy on schaden-aufderhar.name" 
+  category_id: 3 
+  created_at: Mon  06 Feb 2023 19:42:41.993298000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:41.993298000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f02296218d0:
+  id: 16
+  amount: 0.9e2 
+  odate: Sun  02 May 2021 07:46:58.000000000 UTC +00:00 
+  description: "28-day aged 300g USDA Certified Prime Ribeye  rosemary-thyme garlic butter  with choice of two sides." 
+  category_id: 4 
+  created_at: Mon  06 Feb 2023 19:42:42.660124000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:42.660125000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229621808:
+  id: 17
+  amount: 0.125e3 
+  odate: Sat  09 Jul 2022 07:06:46.000000000 UTC +00:00 
+  description: "28-day aged 300g USDA Certified Prime Ribeye  rosemary-thyme garlic butter  with choice of two sides." 
+  category_id: 4 
+  created_at: Mon  06 Feb 2023 19:42:42.726614000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:42.726615000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229621740:
+  id: 18
+  amount: 0.121e3 
+  odate: Sun  03 Apr 2022 11:17:40.000000000 UTC +00:00 
+  description: "Three egg whites with spinach  mushrooms  caramelized onions  tomatoes and low-fat feta cheese. With herbed quinoa  and your choice of rye or whole-grain toast." 
+  category_id: 4 
+  created_at: Mon  06 Feb 2023 19:42:43.843131000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:43.843132000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229621678:
+  id: 19
+  amount: 0.175e3 
+  odate: Sun  30 Oct 2022 12:13:04.000000000 UTC +00:00 
+  description: "Two buttermilk waffles  topped with whipped cream and maple syrup  a side of two eggs served any style  and your choice of smoked bacon or smoked ham." 
+  category_id: 4 
+  created_at: Mon  06 Feb 2023 19:42:44.018184000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:44.018185000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f02296215b0:
+  id: 20
+  amount: 0.999e3 
+  odate: Mon  07 Jun 2021 08:37:13.000000000 UTC +00:00 
+  description: "Command & Conquer 3: Tiberium Wars" 
+  category_id: 5 
+  created_at: Mon  06 Feb 2023 19:42:44.318098000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:44.318099000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f02296214e8:
+  id: 21
+  amount: 0.393e3 
+  odate: Sat  01 Oct 2022 06:56:33.000000000 UTC +00:00 
+  description: "Animal Crossing: Wild World" 
+  category_id: 5 
+  created_at: Mon  06 Feb 2023 19:42:44.776488000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:44.776488000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229621420:
+  id: 22
+  amount: 0.398e3 
+  odate: Sat  28 May 2022 12:33:57.000000000 UTC +00:00 
+  description: "Vampire: The Masquerade – Bloodlines" 
+  category_id: 5 
+  created_at: Mon  06 Feb 2023 19:42:44.926457000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:44.926458000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229621358:
+  id: 23
+  amount: 0.107e3 
+  odate: Sat  18 Sep 2021 10:00:25.000000000 UTC +00:00 
+  description: "Sleeping Dogs" 
+  category_id: 5 
+  created_at: Mon  06 Feb 2023 19:42:45.661703000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:45.661708000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229621290:
+  id: 24
+  amount: 0.942e3 
+  odate: Tue  10 Jan 2023 11:39:12.000000000 UTC +00:00 
+  description: "Left 4 Dead 2" 
+  category_id: 5 
+  created_at: Mon  06 Feb 2023 19:42:45.736950000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:45.736954000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f02296211c8:
+  id: 25
+  amount: 0.692e3 
+  odate: Sat  24 Dec 2022 10:32:40.000000000 UTC +00:00 
+  description: "Infamous" 
+  category_id: 5 
+  created_at: Mon  06 Feb 2023 19:42:45.802976000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:45.802979000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229621100:
+  id: 26
+  amount: 0.56e3 
+  odate: Sat  18 Dec 2021 07:07:14.000000000 UTC +00:00 
+  description: "Kid Icarus" 
+  category_id: 5 
+  created_at: Mon  06 Feb 2023 19:42:46.154444000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:46.154450000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229621038:
+  id: 27
+  amount: 0.182e3 
+  odate: Fri  03 Dec 2021 14:37:36.000000000 UTC +00:00 
+  description: "Summer Cup" 
+  category_id: 6 
+  created_at: Mon  06 Feb 2023 19:42:47.451403000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:47.451404000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229620f70:
+  id: 28
+  amount: 0.163e3 
+  odate: Tue  02 Nov 2021 10:57:19.000000000 UTC +00:00 
+  description: "Captain's Forrester" 
+  category_id: 6 
+  created_at: Mon  06 Feb 2023 19:42:47.626449000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:47.626450000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229620ea8:
+  id: 29
+  amount: 0.252e3 
+  odate: Mon  31 May 2021 10:32:56.000000000 UTC +00:00 
+  description: "Major Cup" 
+  category_id: 6 
+  created_at: Mon  06 Feb 2023 19:42:47.810047000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:47.810048000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229620de0:
+  id: 30
+  amount: 0.105e3 
+  odate: Tue  27 Jul 2021 14:57:08.000000000 UTC +00:00 
+  description: "The Captain's Choice" 
+  category_id: 6 
+  created_at: Mon  06 Feb 2023 19:42:47.918078000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:47.918079000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229620d18:
+  id: 31
+  amount: 0.26e3 
+  odate: Mon  18 Apr 2022 07:51:52.000000000 UTC +00:00 
+  description: "Huggy Star" 
+  category_id: 6 
+  created_at: Mon  06 Feb 2023 19:42:48.094726000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:48.094730000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229620c50:
+  id: 32
+  amount: 0.166e3 
+  odate: Sun  05 Dec 2021 15:57:35.000000000 UTC +00:00 
+  description: "Captain's Select" 
+  category_id: 6 
+  created_at: Mon  06 Feb 2023 19:42:48.151324000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:48.151324000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229620b88:
+  id: 33
+  amount: 0.213e3 
+  odate: Sun  23 May 2021 14:05:06.000000000 UTC +00:00 
+  description: "Brooklyn Nuts" 
+  category_id: 6 
+  created_at: Mon  06 Feb 2023 19:42:48.436559000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:48.436560000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229620ac0:
+  id: 34
+  amount: 0.71e2 
+  odate: Wed  11 Aug 2021 07:59:15.000000000 UTC +00:00 
+  description: "Summer Star" 
+  category_id: 6 
+  created_at: Mon  06 Feb 2023 19:42:48.636589000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:48.636592000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f02296209f8:
+  id: 35
+  amount: 0.32e2 
+  odate: Sat  19 Nov 2022 09:50:32.000000000 UTC +00:00 
+  description: "Split Look" 
+  category_id: 6 
+  created_at: Mon  06 Feb 2023 19:42:48.794314000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:48.794316000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229620930:
+  id: 36
+  amount: 0.218e3 
+  odate: Tue  30 Nov 2021 13:32:23.000000000 UTC +00:00 
+  description: "KrebStar Utopia" 
+  category_id: 6 
+  created_at: Mon  06 Feb 2023 19:42:49.211544000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:49.211547000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229620868:
+  id: 37
+  amount: 0.256e3 
+  odate: Mon  24 May 2021 09:39:43.000000000 UTC +00:00 
+  description: "Kreb-Full-o Select" 
+  category_id: 6 
+  created_at: Mon  06 Feb 2023 19:42:49.661777000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:49.661780000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f02296207a0:
+  id: 38
+  amount: 0.99e2 
+  odate: Wed  31 Mar 2021 13:47:06.000000000 UTC +00:00 
+  description: "The Captain's Star" 
+  category_id: 6 
+  created_at: Mon  06 Feb 2023 19:42:50.111370000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:50.111373000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f02296206d8:
+  id: 39
+  amount: 0.126e3 
+  odate: Fri  26 Aug 2022 11:50:25.000000000 UTC +00:00 
+  description: "The Joshua Tree" 
+  category_id: 7 
+  created_at: Mon  06 Feb 2023 19:42:50.244912000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:50.244915000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229620610:
+  id: 40
+  amount: 0.71e2 
+  odate: Sat  31 Jul 2021 08:40:03.000000000 UTC +00:00 
+  description: "High School Musical 2" 
+  category_id: 7 
+  created_at: Mon  06 Feb 2023 19:42:50.644603000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:50.644606000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229620548:
+  id: 41
+  amount: 0.195e3 
+  odate: Tue  14 Dec 2021 10:11:37.000000000 UTC +00:00 
+  description: "Like a Virgin" 
+  category_id: 7 
+  created_at: Mon  06 Feb 2023 19:42:50.811972000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:50.811975000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229620480:
+  id: 42
+  amount: 0.207e3 
+  odate: Wed  02 Nov 2022 15:34:08.000000000 UTC +00:00 
+  description: "Thriller" 
+  category_id: 7 
+  created_at: Mon  06 Feb 2023 19:42:51.252682000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:51.252686000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f02296203b8:
+  id: 43
+  amount: 0.144e3 
+  odate: Fri  10 Jun 2022 11:43:56.000000000 UTC +00:00 
+  description: "25" 
+  category_id: 7 
+  created_at: Mon  06 Feb 2023 19:42:51.453136000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:51.453139000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f02296202f0:
+  id: 44
+  amount: 0.254e3 
+  odate: Fri  18 Nov 2022 13:55:33.000000000 UTC +00:00 
+  description: "True Blue" 
+  category_id: 7 
+  created_at: Mon  06 Feb 2023 19:42:52.036492000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:52.036496000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229620228:
+  id: 45
+  amount: 0.219e3 
+  odate: Sat  29 Jan 2022 09:41:12.000000000 UTC +00:00 
+  description: "...Baby One More Time" 
+  category_id: 7 
+  created_at: Mon  06 Feb 2023 19:42:52.392774000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:52.392775000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229620160:
+  id: 46
+  amount: 0.53e2 
+  odate: Thu  29 Jul 2021 07:51:21.000000000 UTC +00:00 
+  description: "Hysteria" 
+  category_id: 7 
+  created_at: Mon  06 Feb 2023 19:42:52.869607000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:52.869610000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229620098:
+  id: 47
+  amount: 0.235e3 
+  odate: Sat  19 Jun 2021 08:35:36.000000000 UTC +00:00 
+  description: "Appetite for Destruction" 
+  category_id: 7 
+  created_at: Mon  06 Feb 2023 19:42:53.012782000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:53.012786000 UTC +00:00 
+  user_id: 1 
+  income: false
+
+0x00007f0229627fa0:
+  id: 48
+  amount: 0.988e3 
+  odate: Fri  21 May 2021 06:43:26.000000000 UTC +00:00 
+  description: "From 1234-2121-1221-1211" 
+  category_id: 8 
+  created_at: Mon  06 Feb 2023 19:42:53.436644000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:53.436648000 UTC +00:00 
+  user_id: 1 
+  income: true
+
+0x00007f0229627ed8:
+  id: 49
+  amount: 0.388e3 
+  odate: Thu  16 Sep 2021 10:47:31.000000000 UTC +00:00 
+  description: "From 1211-1221-1234-2201" 
+  category_id: 8 
+  created_at: Mon  06 Feb 2023 19:42:54.492445000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:54.492446000 UTC +00:00 
+  user_id: 1 
+  income: true
+
+0x00007f0229627e10:
+  id: 50
+  amount: 0.161e3 
+  odate: Thu  22 Apr 2021 11:06:08.000000000 UTC +00:00 
+  description: "From 1228-1221-1221-1431" 
+  category_id: 8 
+  created_at: Mon  06 Feb 2023 19:42:54.805136000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:54.805138000 UTC +00:00 
+  user_id: 1 
+  income: true
+
+0x00007f0229627d48:
+  id: 51
+  amount: 0.1426e4 
+  odate: Mon  21 Mar 2022 07:45:34.000000000 UTC +00:00 
+  description: "From 1211-1221-1234-2201" 
+  category_id: 8 
+  created_at: Mon  06 Feb 2023 19:42:55.386304000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:55.386307000 UTC +00:00 
+  user_id: 1 
+  income: true
+
+0x00007f0229627c80:
+  id: 52
+  amount: 0.141e4 
+  odate: Tue  02 Nov 2021 13:13:27.000000000 UTC +00:00 
+  description: "From 1212-1221-1121-1234" 
+  category_id: 8 
+  created_at: Mon  06 Feb 2023 19:42:56.860538000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:56.860541000 UTC +00:00 
+  user_id: 1 
+  income: true
+
+0x00007f0229627bb8:
+  id: 53
+  amount: 0.448e4 
+  odate: Fri  18 Jun 2021 14:40:10.000000000 UTC +00:00 
+  description: "From 1228-1221-1221-1431" 
+  category_id: 9 
+  created_at: Mon  06 Feb 2023 19:42:58.060974000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:58.060977000 UTC +00:00 
+  user_id: 1 
+  income: true
+
+0x00007f0229627af0:
+  id: 54
+  amount: 0.2602e4 
+  odate: Sat  22 Oct 2022 13:36:26.000000000 UTC +00:00 
+  description: "From 1212-1221-1121-1234" 
+  category_id: 9 
+  created_at: Mon  06 Feb 2023 19:42:58.310541000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:58.310544000 UTC +00:00 
+  user_id: 1 
+  income: true
+
+0x00007f0229627a28:
+  id: 55
+  amount: 0.2391e4 
+  odate: Sun  06 Jun 2021 10:21:31.000000000 UTC +00:00 
+  description: "From 1228-1221-1221-1431" 
+  category_id: 9 
+  created_at: Mon  06 Feb 2023 19:42:58.808801000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:42:58.808801000 UTC +00:00 
+  user_id: 1 
+  income: true
+
+0x00007f0229627960:
+  id: 56
+  amount: 0.1767e4 
+  odate: Tue  06 Dec 2022 12:30:59.000000000 UTC +00:00 
+  description: "From 1228-1221-1221-1431" 
+  category_id: 9 
+  created_at: Mon  06 Feb 2023 19:43:00.943800000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:43:00.943803000 UTC +00:00 
+  user_id: 1 
+  income: true
+
+0x00007f0229627898:
+  id: 57
+  amount: 0.2983e4 
+  odate: Tue  07 Sep 2021 11:14:58.000000000 UTC +00:00 
+  description: "From 1211-1221-1234-2201" 
+  category_id: 9 
+  created_at: Mon  06 Feb 2023 19:43:01.060878000 UTC +00:00 
+  updated_at: Mon  06 Feb 2023 19:43:01.060881000 UTC +00:00 
+  user_id: 1 
+  income: true>
+

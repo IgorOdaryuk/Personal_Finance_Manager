@@ -1,0 +1,30 @@
+<div class="container" >
+
+  <div class="card card-cover overflow-hidden">
+    <%= button_to image_tag("delete-button.png", width: '25px'), 
+                      operation, method: :delete, data: {turbo_confirm: t('confirm')}, 
+                      class: 'nav-link bg-transparent border-0 shadow-none position-absolute top-0 end-0 ', id:'delete-button' %>
+    <div class="d flex-column h-100 p-5 pb-3 text-shadow-1">
+      <h2 class="display-6 lh-1 fw-bold"><%= ('%.2f' % operation.amount.round(2)) %></h2>
+      <div id="description-text"><%= format_description(operation) %></div>
+      <small><%= show_operation_type(operation) %></small><br>
+
+        <li class="d-flex align-items-center me-3">
+          <small><%= operation.odate.strftime("%Y-%m-%d") %></small>
+        </li>
+        <li class="d-flex align-items-center">
+          <small><%= distance_of_time_in_words((Time.now - operation.odate).to_i) %> <%= locale == :en ? 'ago' : 'тому' %></small>
+        </li>
+      </ul>
+    
+      <div><%= Category.find(operation.category_id).name %></div><br><br>
+    
+      <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" id="button-groups">
+        <div class="btn-group me-2" role="group" aria-label="First group">         
+          <%= link_to t('show'), operation, class:"btn btn-success", id:"card-button-groups" %>
+          <%= link_to t('edit'), edit_operation_path(operation), class:"btn btn-success", id:"card-button-groups" %>
+        </div>
+      </div>
+    </div>
+  </div>      
+</div>

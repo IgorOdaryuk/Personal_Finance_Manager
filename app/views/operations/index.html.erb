@@ -1,0 +1,25 @@
+<p style="color: green"><%= notice %></p>
+
+<h1 class="text-center"><%= category_title(params[:o_type]) %></h1>
+
+<div id="operations">
+  <div class="album py-5">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <% @operations.each do |operation| %>
+            <%= render operation %>
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<%= paginate @operations %>
+
+<div class="gap-6 text-center">
+  <%= link_to t('header.operations.new'), new_operation_path, class:"btn btn-lightgrey", id:"margn-btns" %>
+</div>
+

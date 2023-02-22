@@ -1,0 +1,38 @@
+
+    <% if user_signed_in? %>
+
+      <div class="col-md-6"id="form-report">
+        <div class="align-self-center">
+          <table class="table">
+            <thead>
+            <tr>
+              <th scope="col"><%= t('main.operations.title') %></th>
+            </tr>
+            <tbody class="table-group-divider">
+            <tr>
+              <th scope="col"><%= t('operations.form.odate') %></th>
+              <th scope="col"><%= t('reports.sum') %></th>
+              <th scope="col"><%= t('operations.form.description') %></th>
+            </tr>
+            </thead>
+
+            <% @operations.each do |operation| %>
+              <tr>
+                <td><%= operation.odate.strftime("%Y / %m / %d") %></td>
+                <td><%= ('%.2f' % operation.amount.round(2)) %></td>
+                <td><%= truncate operation.description, length: 40 %></td>
+              </tr>
+            <% end %>
+
+            <tr>
+              <th scope="col"><%= t('reports.total_sum') %></th>
+              <th scope="col"><%= ('%.2f' % @operations.map { | operation | operation.amount }.sum.round(2)) %></th>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <% end %>
+  </div>
+</div>
+

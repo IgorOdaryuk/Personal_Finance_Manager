@@ -1,0 +1,56 @@
+<div class="d-flex justify-content-center" >
+  <%= form_with(model: operation) do |form| %>
+    <div class="container" id="form">
+      <% if operation.errors.any? %>
+        <div style="color: red" >
+          <h2><%= "#{operation.errors.count.to_s} #{t('errors.error', count:operation.errors.count)} "%>
+            <%= t('errors.all_operation_errors', count:operation.errors.count) %></h2>
+
+          <% operation.errors.each do |error| %>
+            <li><%= t("errors.attributes.#{error.attribute.to_s}") %> <%= error.message %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+
+        <div>
+          <%= form.label t('operations.form.amount'),style: "display: block" %>
+          <%= form.text_field :amount, class:"form-control" %>
+        </div>
+
+        <div class="input-with-post-icon datepicker" >
+          <%= form.label t('operations.form.odate'), style: "display: block" %>
+          <%= form.datetime_field :odate, class:"form-control" %>
+        </div>
+
+        <div>
+          <%= form.label t('operations.form.description'), style: "display: block" %>
+          <%= form.text_field :description, class:"form-control"   %>
+        </div>
+
+        <br>
+        <div>
+          <%= form.label t('operations.income') %>
+          <%= form.check_box :income, {}, true %>
+        </div>
+
+
+        <div class="text-center">
+          <%= form.label t('operations.form.category'), style: "display: block"%>
+          <% categories_array = Category.all.where('user_id = ?', current_user.id).map { | cat | [cat.name, cat.id]} %>
+          <%= form.select(:category_id, categories_array, {include_blank: t('operations.form.choose')}, {:class => 'btn btn-secondary dropdown-toggle'}) %>
+        </div>
+
+
+      
+
+      <div class="container p-3 text-center">
+        <div>
+          <%= form.submit submit_operation_type, class:"btn btn-success" %>
+        </div>
+      </div>
+  </div>
+  <% end %>
+</div>
+

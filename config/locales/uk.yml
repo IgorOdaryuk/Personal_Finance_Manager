@@ -1,0 +1,132 @@
+uk:
+  header:
+    reports: "Звіти"
+
+    operations:
+      title: "Операції"
+      all: "Показати всі операції"
+      income: "Показати доходи"
+      outlay: "Показати витрати"
+      new: "Нова операція"
+
+    categories:
+      title: "Категорії"
+      all: "Показати категорії"
+      new: "Нова категорія"
+
+    user:
+      login: "Увійти"
+      signup: "Зареєструватись"
+      logout: "Вийти"
+      settings: "Налаштування"
+
+  user:
+    edit_user: "Редагувати користувача"
+    unhappy: "Незадоволені проєктом?"
+    delete_account: "Видалити мій обліковий запис"
+    select_language: "Оберіть мову"
+
+    confirmarions:
+      resend_instructions: "Повторно надіcлати інструкції для підтвердження"
+
+    passwords:
+      send_instructions: "Надішліть мені інструкції щодо зміни пароля"
+
+    form:
+      password: "Пароль"
+      password_confirmation: "Підтвердження паролю"
+      current_password: "Поточний пароль"
+      remember_me: "Запам'ятати мене"
+      char_min: " символів мінімум"
+      change_pass_comment: "(залиште пустим якщо не хочете змінювати)"
+      current_pass_comment: "(нам потрібний Ваш поточний пароль для підтвердження змін)"
+
+    shared:
+      links:
+        tap_here: "Тицьни сюди"
+        forgot_passwd: "Забули пароль?"
+        no_account: "Досі немає облікового запису?"
+        no_conf_info: "Не отримали інструкцію з підтвердженням?"
+        no_unlock_instructions: "Не отримали інструкцію з розблокування?"
+        sign_with: "Авторизуватися за допомогою "
+
+    unlocks:
+      resend_instructions: "Повторно надіcлати інструкції для розблокування"
+
+  categories:
+    form:
+      name: 'Назва'
+      description: "Опис"
+      create: "Створити категорію"
+      update: "Готово"
+
+    edit: "Редагувати категорію"
+    show_operations: "Показати операції"
+
+  operations:
+    income: "Дохід"
+    outlay: "Витрата"
+
+    form:
+      amount: 'Сума'
+      odate: "Дата операції"
+      description: "Опис"
+      category: "Категорія"
+      choose: "Обрати категорію"
+      create: "Створити операцію"
+      update: "Готово"
+
+
+    edit: "Редагувати операцію"
+
+  reports:
+    form:
+      start_date: "Початкова дата:"
+      end_date: "Кінцева дата:"
+      income: "Додати доходи"
+      by_category: "Звіт по категорії"
+      by_dates: "Звіт по датам"
+
+    sum: "Сума"
+    total_sum: "Всього"
+
+  main:
+    exchange:
+      rate: "Курс валют на"
+      currency: "Валюта"
+      buy: "Купівля"
+      sell: "Продаж"
+
+    operations:
+      title: "Нещодавні витрати"
+
+
+  confirm: "Ви впенені?"
+  show: "Показати"
+  edit: "Змінити"
+  delete: "Видалити"
+  update: "Оновити"
+
+  errors:
+    error:
+      one: "помилка"
+      few: "помилки"
+      many: "помилок"
+      other: "помилок"
+    all_category_errors:
+      one: "не дозволяє зберегти категорію:"
+      few: "не дозволяють зберегти категорію:"
+      many: "не дозволяють зберегти категорію:"
+      other: "не дозволяють зберегти категорію:"
+    all_operation_errors:
+      one: "не дозволяє зберегти операцію:"
+      few: "не дозволяють зберегти операцію:"
+      many: "не дозволяють зберегти операцію:"
+      other: "не дозволяють зберегти операцію:"
+
+    attributes:
+      name: 'Поле "Назва"'
+      description: 'Поле "Опис"'
+      category: 'Поле "Категорія"'
+      amount: 'Поле "Сума"'
+      odate: 'Поле "Дата операції"'

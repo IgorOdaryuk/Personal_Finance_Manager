@@ -1,0 +1,24 @@
+<p style="color: green"><%= notice %></p>
+
+<h1 class="text-center"><%= t('header.categories.title') %></h1>
+
+<div id="categories">
+  <div class="album py-5">
+    <div class="container">
+      <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <% @categories.each do |category| %>
+            <%= render category %>
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<%= paginate @categories %>
+
+<div class="gap-6 text-center">
+  <%= link_to t('header.categories.new') , new_category_path, class:"btn btn-dark", id:"margn-btns"%>
+</div>
